@@ -1,5 +1,22 @@
-body{
-  font-family: cursive;
+body {
+  font-family: Arial, sans-serif;
+}
+
+main {
+  width: 320px;
+  margin: 32px auto;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  margin: 0 0 16px;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 4px;
+  box-sizing: border-box;
 }
 
 ul {
@@ -8,8 +25,9 @@ ul {
   padding: 0;
 }
 
-li{
+li {
   display: flex;
+  margin: 8px 0 ;
 }
 
 .done {
@@ -17,7 +35,20 @@ li{
   color: #ccc;
 }
 
-.delete{
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+.delete {
   color: #ccc;
   cursor: pointer;
+}
+
+.delete-form {
+  margin-left: auto;
+  padding-left: 8px;
+}
+
+.input-form{
+  display: flex;
 }
