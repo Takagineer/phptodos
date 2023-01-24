@@ -35,10 +35,3 @@ function deleteTodo($pdo)
   $stmt->bindValue('id', $id, PDO::PARAM_INT);
   $stmt->execute();
 }
-
-function getTodos($pdo)
-{
-  $stmt = $pdo->query("SELECT * FROM todos ORDER BY id DESC");
-  $todos = $stmt->fetchAll();
-  return $todos;
-}
